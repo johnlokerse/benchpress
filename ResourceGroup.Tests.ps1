@@ -1,6 +1,7 @@
 BeforeAll{
-    . $PSScriptRoot/BenchPress/Helpers/Azure/ResourceGroup.ps1
-    . $PSScriptRoot/BenchPress/Helpers/Azure/Bicep.ps1
+    Import-Module BicepTest
+    #. $PSScriptRoot/BenchPress/Helpers/Azure/ResourceGroup.ps1
+    #. $PSScriptRoot/BenchPress/Helpers/Azure/Bicep.ps1
 }
 Describe 'Verify Resource Group Exists' {
     it 'Should contain a resource group named tflintrules' {
